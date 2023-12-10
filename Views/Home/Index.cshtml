@@ -1,0 +1,7 @@
+﻿@model List<TaskModel>
+
+<!-- Exibição da lista de tarefas na View -->
+@foreach (var task in Model)
+{
+    <p>@task.TaskName - @task.IsCompleted</p>
+}
